@@ -20,11 +20,10 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0.125 0 0.025"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:$(find my_mobrob)/meshes/chassis.STL" />
+        <box size="0.25 0.15 0.05"/>
       </geometry>
       <material
         name="">
@@ -34,11 +33,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.125 0 0.025"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:$(find my_mobrob)/meshes/chassis.STL" />
+        <box size="0.25 0.15 0.05"/>
       </geometry>
     </collision>
   </link>
@@ -74,8 +72,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:$(find my_mobrob)/meshes/caster_wheel.STL" />
+          <sphere radius="0.007"/>
       </geometry>
       <material
         name="">
@@ -88,8 +85,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:$(find my_mobrob)/meshes/caster_wheel.STL" />
+          <sphere radius="0.007"/>
       </geometry>
     </collision>
   </link>
@@ -137,7 +133,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 8.6E-03 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
